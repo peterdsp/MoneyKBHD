@@ -29,6 +29,9 @@ Well, worry no more! With **MoneyKBHD.swift**, we're doing the heavy lifting so 
 ```swift
 // Download the wallpapers for free, no strings attached!
 swiftc -o MoneyKBHD -Xfrontend -enable-experimental-concurrency MoneyKBHD.swift
+
+chmod +x ./MoneyKBHD
+
 ./MoneyKBHD
 ```
 
