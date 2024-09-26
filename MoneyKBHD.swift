@@ -36,7 +36,7 @@ func startDownload() throws {
     guard let jsonData = root.data else {
         throw NSError(domain: "", code: -1, userInfo: [NSLocalizedDescriptionKey: "⛔ JSON does not have a \"data\" property at its root."])
     }
-    let saveDirectory = FileManager.default.currentDirectoryPath + "/MoneyKBHD"
+    let saveDirectory = FileManager.default.currentDirectoryPath + "/MoneyKBHD_"
     if !FileManager.default.fileExists(atPath: saveDirectory) {
         try FileManager.default.createDirectory(atPath: saveDirectory, withIntermediateDirectories: true)
         print("💸 Created directory: \(saveDirectory)")
